@@ -30,10 +30,15 @@ export default function RootLayout({
       <body
         className="bg-[rgba(26,26,26,1)] flex flex-col items-center"
       >
-        <Header/>
+        <Header />
 
-        <Providers> {children}</Providers>
-       
+        <Providers>
+          <div className="w-[736px]">
+          {children}
+          </div>
+          
+        </Providers>
+
       </body>
     </html>
   );

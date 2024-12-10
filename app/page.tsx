@@ -47,8 +47,8 @@ export default function Home() {
   const completedTasksCount = tasks.filter(task => task.completed).length;
 
   return (
-    <div className="w-[736px]">
-      <Link href="/create" className="bg-[rgba(30,111,159,1)] flex justify-center items-center text-[rgba(242,242,242,1)] rounded-[8px] p-[16px] mt-[-20px] w-full">
+    <div className="w-full">
+      <Link href="/AddTask" className="bg-[rgba(30,111,159,1)] flex justify-center items-center text-[rgba(242,242,242,1)] rounded-[8px] p-[16px] mt-[-20px] w-full">
         <p className="text-[14px] font-[700] mr-2">Create Task</p>
         <Image src='/assests/images/plus.svg' alt="plus" width={16} height={16}/>
       </Link>
