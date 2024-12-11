@@ -73,7 +73,7 @@ const TaskCard: FC<TaskCardProps> = ({ id, title, completed, onTaskUpdate, onTas
                 />
                 {completed && (
                     <svg
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                        className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
                         width="14"
                         height="10"
                         viewBox="0 0 14 10"
