@@ -45,7 +45,7 @@ const TaskCard: FC<TaskCardProps> = ({ id, title, completed, onTaskUpdate, onTas
     return (
         <div
             onClick={navigateToUpdateTask}
-            className={`cursor-pointer  w-full flex justify-between items-center p-[16px] rounded-[8px] ${
+            className={`cursor-pointer  w-full flex justify-between items-center p-[16px] rounded-[8px] border border-[#333333] ${
                 completed ? 'bg-[rgba(38,38,38,1)]' : 'bg-[rgba(51,51,51,1)]'
             }`}
         >

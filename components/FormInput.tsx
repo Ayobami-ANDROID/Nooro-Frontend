@@ -47,9 +47,9 @@ const FormInput: FC<FormInputProps> = ({
       <input
         type={type || "text"}
         placeholder={placeHolder}
-        className={`border border-[rgba(51,51,51,1)] text-[#f2f2f2] ${
+        className={`border border-[rgba(51,51,51,1)] text-[#f2f2f2] font-[400] text-[14px] ${
           error ? "border border-red-500" : ""
-        } ${className}  rounded-[8px]   h-[52px]  w-full pl-4 text-[#000] bg-[rgba(255,255,255,0.05)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.06)] text-md font-normal placeholder:font-normal outline-none ${
+        } ${className}  rounded-[8px]   h-[52px]  w-full pl-4 text-[#000] bg-[rgba(255,255,255,0.05)] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.06)] text-md font-normal placeholder:font-normal placeholder:text-[#F2F2F2] outline-none ${
           InputStyle && InputStyle.className
         }`}
         style={InputStyle && InputStyle.style}

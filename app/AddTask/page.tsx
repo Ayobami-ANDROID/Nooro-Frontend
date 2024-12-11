@@ -92,7 +92,7 @@ const AddTaskPage: FC = () => {
                     <FormInput
                         label="Title"
                         name="title"
-                        placeHolder="Enter task title"
+                        placeHolder="Ex. Brush you teeth"
                         value={formik.values.title}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
