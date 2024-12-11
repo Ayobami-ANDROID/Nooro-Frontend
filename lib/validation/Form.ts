@@ -16,10 +16,9 @@ export const COLOR_PALETTE:string[] = [
     
   ];
 
-export const formValidate = yup.object().shape({
-    title:yup.string().min(1, 'Title must be at least 3 characters').required('Task title is required'),
-
-    color: yup.string()
-    .oneOf(COLOR_PALETTE, 'Please select a valid color')
-    .required('Color selection is required')
-})
+  export const validationSchema = yup.object({
+    title: yup.string()
+        .required("Task title is required")
+        .min(3, "Title must be at least 3 characters"),
+    color: yup.string().required("Please select a color for your task"),
+});

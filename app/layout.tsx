@@ -33,7 +33,7 @@ export default function RootLayout({
         <Header />
 
         <Providers>
-          <div className="w-[736px]">
+          <div className="lg:w-[736px] w-full lg:px-0 px-12">
           {children}
           </div>
           
