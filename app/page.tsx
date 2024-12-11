@@ -78,7 +78,7 @@ export default function Home() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="flex flex-col w-full mt-[100px]"
+        className="flex flex-col w-full mt-[70px]"
       >
         <div className="flex justify-between mb-6">
           <div className="flex">

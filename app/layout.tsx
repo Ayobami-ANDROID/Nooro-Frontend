@@ -27,10 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" type="image/svg+xml" href="/assests/images/rocket.svg" />
+      <title>Todo App</title>
+      </head>
       <body
         className="bg-[rgba(26,26,26,1)] flex flex-col items-center"
       >
         <Header />
+      
 
         <Providers>
           <div className="lg:w-[736px] w-full lg:px-0 px-12">

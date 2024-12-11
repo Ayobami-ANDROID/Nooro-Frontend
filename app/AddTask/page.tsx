@@ -65,7 +65,7 @@ const AddTaskPage: FC = () => {
 
     return (
         <motion.div
-            className='w-full mt-[100px] flex flex-col gap-[48px]'
+            className='w-full mt-[70px] flex flex-col gap-[48px]'
             initial="initial"
             animate="in"
             exit="out"
