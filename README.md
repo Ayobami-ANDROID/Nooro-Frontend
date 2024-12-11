@@ -25,17 +25,24 @@ This project is a **Frontend Todo List App** built using **Next.js**. It allows 
 
 ### Frontend
 
-1. Install dependencies:
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ayobami-ANDROID/Nooro-Frontend.git
+   cd Nooro-Frontend
+   ```
+
+2. Install dependencies:
     ```bash
     npm install
     ```
 
-2. Start the development server:
+3. Start the development server:
     ```bash
     npm run dev
     ```
 
-3. The frontend application will be accessible at `http://localhost:3000`.
+4. The frontend application will be accessible at `http://localhost:3000`.
 
 ---
 
