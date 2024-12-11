@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Todo List Application
 
-## Getting Started
+This project is a **Frontend Todo List App** built using **Next.js**. It allows users to manage their tasks efficiently by providing features to create, edit, delete, and toggle task completion statuses. The application uses **Formik** and **Yup** for form handling and validation, and **Axios** for API communication.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend
+- **Home View**:
+  - Displays a list of tasks with their title, status (completed/not completed), and options to edit or delete.
+  - A summary of tasks: "Tasks: X" and "Completed: Y of X".
+  - Allows toggling the completion status of tasks.
+  - Includes a button to navigate to the "Create Task" page.
+- **Create/Edit Task Page**:
+  - Form for adding or editing tasks with fields for:
+    - **Title** (required, minimum of 3 characters).
+    - **Color** (selectable options).
+  - Form validation using **Formik** and **Yup**.
+  - Axios is used for API calls to create or update tasks.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Setup
 
-## Learn More
+### Frontend
 
-To learn more about Next.js, take a look at the following resources:
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. The frontend application will be accessible at `http://localhost:3000`.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `TaskCard`
+- Displays individual task details and actions for editing, deleting, or toggling completion status.
+
+### `TaskForm`
+- A reusable form component for creating and editing tasks, using Formik for form handling and Yup for validation.
+
+---
+
+## Notes
+- This project is designed with modularity and reusability in mind. Reusable components like `TaskCard` and `TaskForm` simplify the frontend codebase.
+- Error handling is implemented for API interactions using Axios, ensuring proper feedback to users.
+
+---
+
+## License
+This project is open-source and available under the [MIT License](LICENSE).
